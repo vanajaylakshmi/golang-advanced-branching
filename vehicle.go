@@ -46,10 +46,9 @@ type feedbackResult struct {
 	feedbackTotal, feedbackPositive, feedbackNegative, feedbackNeutral int
 }
 
-var (
-	vehicleResult map[string]feedbackResult
-	inventory     vehicle
-)
+var vehicleResult map[string]feedbackResult
+
+var inventory []vehicle
 
 func init() {
 
